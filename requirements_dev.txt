@@ -8,7 +8,7 @@ coverage==4.5.1
 Sphinx==1.8.1
 twine==1.12.1
 numpy==1.16.3
-scipy==1.3.0
+scipy>=1.2.1
 pyqt5<5.10
 thermotools>=0.2.6
 mdanalysis

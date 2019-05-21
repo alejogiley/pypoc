@@ -25,7 +25,7 @@ Helper functions
 #### imports                                                              #
 ###########################################################################
 
-from modules import rank
+from .rank import *
 from math import cos, sin, atan2
 
 ###########################################################################

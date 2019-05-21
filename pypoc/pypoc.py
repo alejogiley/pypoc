@@ -8,8 +8,8 @@
 
 import sys, time
 
-from modules import fmda
-from modules import grdx
+from .modules import fmda
+from .modules import grdx
 
 ###########################################################################
 #### functions/classes                                                    #

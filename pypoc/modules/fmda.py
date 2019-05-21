@@ -23,7 +23,7 @@ Functions
 import numpy as np
 import MDAnalysis as mda
 
-from  modules import acyl
+from .acyl import _Acyls, add_to_dict
 from collections import defaultdict
 
 ###########################################################################
@@ -95,14 +95,14 @@ def mda2dict(argv):
                 ### calculate order for each residue 	                 ###
                 ############################################################
 		# length of dict is one per residue
-		angles = [acyl._Acyls.average(resang[k]) 
+		angles = [_Acyls.average(resang[k]) 
 				for k in list(set(res))]
 		# length of list one per bond
 		series = [angles[i] for i in res-res[0]]
 		############################################################
                 ### save values in data dict 	                         ###
                 ############################################################
-		acyl.add_to_dict(data, ids, tg.atom1.resids, tg.atom1.ix, series)
+		add_to_dict(data, ids, tg.atom1.resids, tg.atom1.ix, series)
 	
 	return data
 

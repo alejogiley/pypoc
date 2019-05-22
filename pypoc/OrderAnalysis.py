@@ -12,6 +12,7 @@ Comments
 Functions
 ----------------
 
+.. add_to_dict
 .. mda2dict
 
 """
@@ -20,15 +21,78 @@ Functions
 #### imports                                                              #
 ###########################################################################
 
+import .TopologyGroup
+
 import numpy as np
 import MDAnalysis as mda
 
-from .acyl import _Acyls, add_to_dict
+from math import cos, sin, atan2
 from collections import defaultdict
 
 ###########################################################################
 #### functions / classses                                                 #
 ###########################################################################
+
+# point of this class
+class _Acyls:
+        """Comments"""
+
+        def __init__(self, resid, bondd, angle):
+                # resid: residue id
+                # bonds: bond id id
+                # resid: residue id
+                # angle: angle in rad
+                self.res = [resid]
+                self.bon = [bondd]
+                self.ang = [angle]
+                # order
+                self.ods = self.order2
+                # counter
+                self.num = 1
+
+        def add_data(self, resid, bondd, angle):
+                # increment 
+                self.num += 1
+                # fill list
+                self.res.append(resid)
+                self.bon.append(bondd)
+                self.ang.append(angle)
+
+        @property
+        def order2(self):
+                """Comment"""
+                # set function
+                f = lambda x: 0.25 + 0.75 * cos(2.0 * x)
+                # apply to all angles
+                self.ods  = sum(map(f, self.ang))
+                # average order
+                self.ods /= len(self.ang)
+                return self.ods
+
+        @staticmethod
+        def average(x):
+                """Comment"""
+                # average angle sine
+                ssin = sum(map(sin, x))
+                # average angle cosine
+                scos = sum(map(cos, x))
+                # average angle
+                return atan2(ssin, scos)
+
+# point of this function
+def add_to_dict(data, ids, resids, bonds, angles):
+        """ Checks wether an id has been added to data dict.
+            If it has been added, increment record,
+            otherwise, creates a new record. """
+
+        for c,v in enumerate(ids):
+                if data.get(v, None) is None:
+                        # create object
+                        data[v] = _Acyls(resids[c], bonds[c], angles[c])
+                else:
+                        # append to object
+                        data[v].add_data(resids[c], bonds[c], angles[c])
+
 
 # !!!!!!!!! Paralellize
 def mda2dict(argv):
@@ -92,7 +156,7 @@ def mda2dict(argv):
 		for key, val in zip(res,ang):
 			resang[key].append(val)
                 ############################################################
-                ### calculate order for each residue 	                 ###
+                ### calculate z-angles for each residue 	         ###
                 ############################################################
 		# length of dict is one per residue
 		angles = [_Acyls.average(resang[k]) 

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""Top-level package for PYPOC."""
+"""Top-level package for pypoc"""
 
 __author__ = """Alejandro Gil-Ley"""
 __email__ = 'alejogiley@gmail.com'

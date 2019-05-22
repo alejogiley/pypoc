@@ -41,7 +41,7 @@ Usage
 Authors
 -------
 
-* Alejandro Gil-Ley <alejogiley@gmail.com>
+Alejandro Gil-Ley <alejogiley@gmail.com>
 
 License
 -------

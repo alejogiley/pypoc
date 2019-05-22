@@ -9,6 +9,7 @@ Sphinx==1.8.1
 twine==1.12.1
 numpy==1.16.3
 scipy>=1.2.1
+mdanalysis
 griddataformats
 
 pytest==3.8.2

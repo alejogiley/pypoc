@@ -11,11 +11,22 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=6.0', ]
+requirements = [
+    'Click>=6.0', 
+    'numpy==1.16.3', 
+    'scipy>=1.2.1', 
+    'mdanalysis', 
+    'griddataformats', 
+]
 
-setup_requirements = ['pytest-runner', ]
+setup_requirements = [
+    'pytest-runner', 
+]
 
-test_requirements = ['pytest', ]
+test_requirements = [
+    'pytest', 
+    'pytest-cov',
+]
 
 setup(
     author="Alejandro Gil-Ley",

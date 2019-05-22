@@ -33,7 +33,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    description="Python Boilerplate contains all the boilerplate you need to create a Python package.",
+    description="Python package for analysis of molecular dynamics simulations of lipid membranes.",
     entry_points={
         'console_scripts': [
             'pypoc=pypoc.cli:main',

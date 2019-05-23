@@ -1,6 +1,6 @@
 #
 env:
-  - TRAVIS_PULL_REQUEST=true
+  - TRAVIS_PULL_REQUEST=false
 
 language: 
   - python

@@ -25,6 +25,7 @@ pip install git+https://github.com/alejogiley/pypoc.git
 Usage
 -----
 
+untested released
 
 Authors
 -------

@@ -13,7 +13,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     'Click>=6.0', 
-    'numpy==1.16.3', 
+    'numpy>=1.15.0', 
     'scipy>=1.2.1', 
     'mdanalysis', 
     'griddataformats', 
@@ -36,8 +36,6 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
-        "Programming Language :: Python :: 2",
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',

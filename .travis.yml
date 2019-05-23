@@ -1,4 +1,7 @@
 #
+env:
+  - TRAVIS_PULL_REQUEST=true
+
 language: 
   - python
 
@@ -11,7 +14,8 @@ before_install:  # Earliest build step
   - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "Not a PR, skipping" && exit; fi
 
 install: 
-  - pip install -U tox-travis && pip install -r requirements.txt
+  - pip install -U tox-travis 
+  - pip install -r requirements.txt
 
 script: 
   - tox

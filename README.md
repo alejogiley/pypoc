@@ -1,20 +1,8 @@
 
-
-.. image:: https://img.shields.io/pypi/v/pypoc.svg
-        :target: https://pypi.org/pypi/pypoc
-
-.. image:: https://img.shields.io/travis/alejogiley/pypoc.svg
-        :target: https://travis-ci.org/alejogiley/pypoc
-
-.. image:: https://readthedocs.org/projects/pypoc/badge/?badge=latest
-	:target: https://readthedocs.org/projects/pypoc/?badge=latest
-        :alt: Documentation Status
-
-
-.. image:: https://pyup.io/repos/github/alejogiley/pypoc/shield.svg
-     :target: https://pyup.io/repos/github/alejogiley/pypoc/
-     :alt: Updates
-
+[![Build Status](https://img.shields.io/travis/alejogiley/pypoc.svg)](https://travis-ci.org/alejogiley/pypoc)
+[![PyPI Version](https://img.shields.io/pypi/v/pypoc.svg)](https://pypi.org/pypi/pypoc)
+[![ReadTheDocs Status](https://readthedocs.org/projects/pypoc/badge/?badge=latest)](https://readthedocs.org/projects/pypoc/?badge=latest)
+[![PyUP Status](https://pyup.io/repos/github/alejogiley/pypoc/shield.svg)](https://pyup.io/repos/github/alejogiley/pypoc/)
 
 pypoc
 ======

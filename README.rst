@@ -39,25 +39,25 @@ Credits
 
 This package was created with cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
+.. Footnotes
+
 .. _docs: http://pypoc.readthedocs.org/en/latest/
 .. _`Python package index`: https://pypi.python.org/pypi/pypoc
 .. _cookiecutter: https://github.com/audreyr/cookiecutter
 .. _audreyr/cookiecutter-pypackage: https://github.com/audreyr/cookiecutter-pypackage
 
-.. Footnotes
-
 .. |devdocs| image:: https://readthedocs.org/projects/pypoc/badge/?badge=latest
-      :alt: Documentation (development version)
+   :alt: Documentation (development version)
    :target: https://www.mdanalysis.org/mdanalysis/
 
 .. |build| image:: https://img.shields.io/travis/alejogiley/pypoc.svg
-      :alt: Build Status
+   :alt: Build Status
    :target: https://travis-ci.org/alejogiley/pypoc
 
-.. |pypi|   image:: https://img.shields.io/pypi/v/pypoc.svg
-      :alt: Build Status
+.. |pypi| image:: https://img.shields.io/pypi/v/pypoc.svg
+   :alt: Build Status
    :target: https://pypi.org/pypi/pypoc
 
 .. |pyup| image:: https://pyup.io/repos/github/alejogiley/pypoc/shield.svg
-      :alt: My PyUP
+   :alt: My PyUP
    :target: https://pyup.io/repos/github/alejogiley/pypoc/

@@ -13,7 +13,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = [
     'Click>=6.0', 
-    'numpy>=1.15.0', 
+    'numpy>=1.16.0', 
     'scipy>=1.2.1', 
     'mdanalysis', 
     'griddataformats', 

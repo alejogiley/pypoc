@@ -1,4 +1,3 @@
-
 ================================
   PyPOC Repository README
 ================================
@@ -41,12 +40,12 @@ License
 Credits
 =======
 
-This package was created with _cookiecutter_  and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage) project template.
+This package was created with cookiecutter_  and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage) project template.
 
 
 .. Footnotes
 
-.. __cookiecutter_ : https://github.com/audreyr/cookiecutter
+.. cookiecutter : https://github.com/audreyr/cookiecutter
 
 .. |devdocs| image:: https://readthedocs.org/projects/pypoc/badge/?badge=latest
       :alt: Documentation (development version)

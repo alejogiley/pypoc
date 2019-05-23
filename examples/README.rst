@@ -4,23 +4,20 @@
 
 |build| |pypi| |devdocs| |pyup|
 
-===========
 
 Python package for analysis of molecular dynamics simulations of lipids membranes.
-See [docs](http://pypoc.readthedocs.org/en/latest/).
+See docs_.
 
 Installation
 ===========
 
-You can install `pypoc` from the [Python package index](https://pypi.python.org/pypi/pypoc) using `pip`:
+You can install ``pypoc`` from the `Python package index`_ using ``pip``:
 
-.. code:: bash
-pip install pypoc
+``pip install pypoc``
 
-The development version can be installed directly from github via `pip`:
+The development version can be installed directly from ``github`` via ``pip``:
 
-.. code:: bash
-pip install git+https://github.com/alejogiley/pypoc.git
+``pip install git+https://github.com/alejogiley/pypoc.git``
 
 Usage
 ===========
@@ -35,17 +32,19 @@ Alejandro Gil-Ley <alejogiley@gmail.com>
 License
 =======
 
-`pypoc` is free software and is licensed under the MIT license.
+``pypoc`` is free software and is licensed under the MIT license.
 
 Credits
 =======
 
-This package was created with cookiecutter_  and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage) project template.
+This package was created with cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
+.. _docs: http://pypoc.readthedocs.org/en/latest/
+.. _`Python package index`: https://pypi.python.org/pypi/pypoc
+.. _cookiecutter: https://github.com/audreyr/cookiecutter
+.. _audreyr/cookiecutter-pypackage: https://github.com/audreyr/cookiecutter-pypackage
 
 .. Footnotes
-
-.. cookiecutter : https://github.com/audreyr/cookiecutter
 
 .. |devdocs| image:: https://readthedocs.org/projects/pypoc/badge/?badge=latest
       :alt: Documentation (development version)

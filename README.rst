@@ -47,11 +47,8 @@ License
 -------
 
 `pypoc` is free software and is licensed under the MIT license.
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
 Credits
 -------
 
-* Cookiecutter: https://github.com/audreyr/cookiecutter
-
-* `audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter) and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage) project template.

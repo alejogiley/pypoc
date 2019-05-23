@@ -1,15 +1,15 @@
-================================
-  PyPOC Repository README
-================================
 
 |build| |pypi| |devdocs| |pyup|
 
+
+pypoc
+=====
 
 Python package for analysis of molecular dynamics simulations of lipids membranes.
 See docs_.
 
 Installation
-===========
+============
 
 You can install ``pypoc`` from the `Python package index`_ using ``pip``:
 
@@ -20,12 +20,12 @@ The development version can be installed directly from ``github`` via ``pip``:
 ``pip install git+https://github.com/alejogiley/pypoc.git``
 
 Usage
-===========
+=====
 
 untested release
 
 Authors
-===========
+=======
 
 Alejandro Gil-Ley <alejogiley@gmail.com>
 

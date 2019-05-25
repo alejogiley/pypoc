@@ -9,14 +9,6 @@ Functions to handle openDX files
 
 Comments
 
-Functions
-----------------
-
-.. dict2grd
-.. grd4smooth
-.. grd2dx
-.. dx4resample
-
 """
 
 ###########################################################################

@@ -14,11 +14,6 @@ Classes
 
 .. _srankSlow
 
-Helper functions
-----------------
-
-.. angle
-
 """
 
 ###########################################################################
@@ -27,7 +22,6 @@ Helper functions
 
 import numpy as np
 
-from math import atan2
 from MDAnalysis.lib import mdamath
 from MDAnalysis.lib.distances import apply_PBC
 from MDAnalysis.core.topologyobjects import TopologyGroup
@@ -44,7 +38,7 @@ def _angle(x, y):
 	"""
 	d = np.dot(x,y)
 	n = mdamath.norm(np.cross(x,y))
-	return atan2(n,d)
+	return math.atan2(n,d)
 
 # point of this class
 def _srankSlow(self, pbc=False):

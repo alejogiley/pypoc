@@ -9,24 +9,16 @@ Functions to analyze the simulation
 
 Comments
 
-Functions
-----------------
-
-.. add_to_dict
-.. mda2dict
-
 """
 
 ###########################################################################
 #### imports                                                              #
 ###########################################################################
 
-import .TopologyGroup
-
 import numpy as np
 import MDAnalysis as mda
 
-from math import cos, sin, atan2
+from pypoc import TopologyGroup
 from collections import defaultdict
 
 ###########################################################################
@@ -62,7 +54,7 @@ class _Acyls:
         def order2(self):
                 """Comment"""
                 # set function
-                f = lambda x: 0.25 + 0.75 * cos(2.0 * x)
+                f = lambda x: 0.25 + 0.75 * math.cos(2.0 * x)
                 # apply to all angles
                 self.ods  = sum(map(f, self.ang))
                 # average order
@@ -73,11 +65,11 @@ class _Acyls:
         def average(x):
                 """Comment"""
                 # average angle sine
-                ssin = sum(map(sin, x))
+                ssin = sum(map(math.sin, x))
                 # average angle cosine
-                scos = sum(map(cos, x))
+                scos = sum(map(math.cos, x))
                 # average angle
-                return atan2(ssin, scos)
+                return math.atan2(ssin, scos)
 
 # point of this function
 def add_to_dict(data, ids, resids, bonds, angles):

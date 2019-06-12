@@ -8,6 +8,12 @@ pypoc
 Python package for analysis of molecular dynamics simulations of lipids membranes.
 See docs_.
 
+Status
+======
+
+⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 5%
+
+
 Installation
 ============
 

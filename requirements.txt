@@ -20,7 +20,7 @@ mmtf-python
 griddataformats
 
 mdanalysis>=0.19.1
-ipywidgets>=6.0.0
+ipywidgets>=7.0
 nglview>=2.0
 
 pytest==3.8.2

@@ -19,9 +19,10 @@ biopython
 mmtf-python
 griddataformats
 
-mdanalysis>=0.19.1
-ipywidgets>=7.0
 nglview>=2.0
+ipywidgets>=7.0
+mdanalysis>=0.19.1
+jupyter_contrib_nbextensions
 
 pytest==3.8.2
 pytest-cov>=2.6.0

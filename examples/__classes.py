@@ -1,3 +1,16 @@
+# new class script
+
+# math functions
+from math import cos, sin, atan2
+from math import radians
+
+# arrays
+import numpy as np
+
+# machine learning
+from sklearn.decomposition import PCA, KernelPCA
+from sklearn.preprocessing import StandardScaler
+
 class dPCAplus:
     '''Principal Component Analysis of dihedral angles
     

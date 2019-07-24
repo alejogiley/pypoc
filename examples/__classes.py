@@ -41,6 +41,20 @@ class dPCAplus:
         self.ang = angles
         self.fms = frames
         self.shp = angles.shape
+
+    def save(self, path):
+        '''Save to csv file
+
+        Parameters
+        ----------
+        path : string
+            file path and name 
+            with .csv extention
+        '''
+        np.savetxt(path,
+                   self.ang, 
+                   delimiter=",",
+                   format='%10.5f')
     
     def lowdb(self, width=5):
         '''Estimate lowest density bin

@@ -21,6 +21,7 @@ griddataformats
 
 nglview>=2.0
 ipywidgets>=7.0
+statsmodels>=0.10.0
 mdanalysis>=0.19.1
 jupyter_contrib_nbextensions
 

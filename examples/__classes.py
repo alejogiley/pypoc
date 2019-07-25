@@ -54,7 +54,7 @@ class dPCAplus:
         np.savetxt(path,
                    self.ang, 
                    delimiter=",",
-                   format='%10.5f')
+                   fmt='%10.5f')
     
     def lowdb(self, width=5):
         '''Estimate lowest density bin
